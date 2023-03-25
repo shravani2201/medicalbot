@@ -1,16 +1,4 @@
-################################################################################
-################################################################################
-########                                                                ########
-########   Python - Firebase - Flask Login/Register App                 ########
-########   Author: Hemkesh Agrawal                                      ########
-########   Website: http://hemkesh.com                                  ########
-########   Last updated on: 11/27/2019                                  ########
-########                                                                ########
-########   P.S. This is my first ever github project, so I              ########
-########   would love to hear your feedback : agrawalh@msu.edu          ########
-########                                                                ########
-################################################################################
-################################################################################
+
 
 import pyrebase
 from flask import Flask, flash, redirect, render_template, request, session, abort, url_for
@@ -42,6 +30,10 @@ person = {"is_logged_in": False, "name": "", "email": "", "uid": ""}
 def login():
     return render_template("login.html")
 
+@app.route("/logout")
+def logout():
+    return render_template("login.html")
+
 #Sign up/ Register
 @app.route("/signup")
 def signup():
@@ -51,6 +43,22 @@ def signup():
 @app.route("/3d")
 def three_d():
     return render_template("3d.html")
+
+@app.route("/head")
+def head():
+    return render_template("head.html")
+
+@app.route("/leg")
+def leg():
+    return render_template("leg.html")
+
+@app.route("/chest")
+def chest():
+    return render_template("chest.html")
+
+@app.route("/stomach")
+def stomach():
+    return render_template("stomach.html")
 
 #Welcome page
 @app.route("/welcome")

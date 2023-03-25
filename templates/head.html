@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Symptoms</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+<body role="document" style="background-color: #ffccd9;">
+<img src="https://i.postimg.cc/xTMn4sfz/head.jpg" usemap="#image-map" class="center" height="580px";width="580px">
+
+
+<map name="image-map">
+    <area target="_blank" alt="S1" title="S1" onclick="d1()" coords="0,250,610,475" shape="rect">
+    <area target="_blank" alt="S2" title="S2" onclick="d2()" coords="625,250,1250,475" shape="rect">
+    <area target="_blank" alt="S3" title="S3" onclick="d3()" coords="290,520,1035,675" shape="rect">
+</map>
+<div class="row">
+
+    <div class="col-xs-12">
+        <div style="clear:both; height:8px;"></div>
+        <div id="selections" style="clear:both;"></div>
+    </div>
+</div>
+<script>
+    function d1(){
+        alert("You might have Epilepsy.\nConsult a neuroligist.")
+    }
+    function d2(){
+        alert("You might have Alzheimers.\nConsult a neuroligist.")
+    }
+    function d3(){
+        alert("You might have Brain cancer.\nConsult a neuroligist.")
+    }
+</script>
+</body>
+<html>
